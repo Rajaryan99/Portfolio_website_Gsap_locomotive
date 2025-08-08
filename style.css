@@ -349,7 +349,7 @@
     border-radius: 20px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 
 
@@ -463,12 +463,14 @@
 
 .contack-section {
     width: 100%;
-    height: 100vh;
     text-align: center;
-    padding: 80px;
+    padding: 0 80px;
+    padding-top: 80px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
 }
 
 .contact_heading {
@@ -534,6 +536,7 @@
     border-radius: 50%;
     cursor: pointer;
     transition: transform .3s ease;
+    padding-bottom: 20px;
 }
 
 .contact-links span:hover {
