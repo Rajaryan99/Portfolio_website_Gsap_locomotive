@@ -641,12 +641,390 @@ body::before {
     color: #888;
 }
 
-/* For phones */
-@media (max-width: 600px) {
-    /* your styles here */
+/* TABLET STYLES (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        width: 85%;
+    }
+
+    .hero-details h1 {
+        font-size: 60px;
+    }
+
+    .hero-details h2 {
+        font-size: 26px;
+    }
+
+    .divimg img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .aboutText p {
+        font-size: 18px;
+    }
 }
 
-/* For tablets */
+/* TABLET STYLES (max-width: 768px) */
 @media (max-width: 768px) {
-    /* your styles here */
+    .container {
+        width: 90%;
+    }
+
+    /* Navigation */
+    .nav {
+        padding: 20px 30px;
+        justify-content: space-between;
+    }
+
+    .nav .navLinks {
+        display: none;
+    }
+
+    .toggle {
+        display: block !important;
+    }
+
+    /* Hero Section */
+    .hero-details {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hero-details h1 {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+
+    .hero-details h2 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .hero-details p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    /* About Section */
+    .about {
+        padding-top: 80px;
+        height: auto;
+    }
+
+    .h1text h1 {
+        font-size: 40px;
+    }
+
+    .desc {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .divimg img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .aboutText {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .aboutText h2 {
+        font-size: 26px;
+    }
+
+    .aboutText p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .techStack {
+        margin-top: 30px;
+    }
+
+    .techStack span {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    /* Projects Section */
+    .proHeading h1 {
+        font-size: 35px;
+    }
+
+    .showProjects {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .projects {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    /* Contact Section */
+    .contack-section {
+        padding: 60px 40px 40px;
+    }
+
+    .contact_heading h1 {
+        font-size: 35px;
+    }
+
+    .contact_heading p {
+        font-size: 18px;
+    }
+
+    .contact-links {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .contact-links span {
+        height: 50px;
+        width: 50px;
+    }
+
+    .contact-links a {
+        font-size: 20px;
+    }
+}
+
+/* MOBILE STYLES (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    /* Navigation */
+    .nav {
+        padding: 15px 20px;
+    }
+
+    .nav .port a {
+        font-size: 1.2rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 90vh;
+        padding: 0 10px;
+    }
+
+    .hero-details h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .hero-details h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .hero-details p {
+        font-size: 16px;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    .viewwork button {
+        height: 45px;
+        width: 160px;
+        font-size: 14px;
+    }
+
+    .BtmArrow {
+        margin-top: 400px;
+    }
+
+    /* About Section */
+    .about {
+        padding-top: 60px;
+    }
+
+    .h1text {
+        margin-bottom: 40px;
+    }
+
+    .h1text h1 {
+        font-size: 32px;
+    }
+
+    .divimg img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .aboutText h2 {
+        font-size: 22px;
+    }
+
+    .aboutText p {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .techStack span {
+        margin: 3px;
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    /* Projects Section */
+    .proHeading h1 {
+        font-size: 28px;
+    }
+
+    .proHeading p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .projects {
+        padding: 15px;
+    }
+
+    .projects h2 {
+        font-size: 20px;
+    }
+
+    .projects p {
+        font-size: 12px;
+    }
+
+    .tech span {
+        font-size: 11px;
+        padding: 2px 8px;
+    }
+
+    .btns button {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+    /* Contact Section */
+    .contack-section {
+        padding: 50px 20px 30px;
+    }
+
+    .contact_heading h1 {
+        font-size: 28px;
+    }
+
+    .contact_heading p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .contact-btn {
+        height: 50px;
+        width: 200px;
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+
+    .contact-links {
+        width: 100%;
+        padding: 0 20px;
+        justify-content: space-around;
+    }
+
+    .contact-links span {
+        height: 45px;
+        width: 45px;
+    }
+
+    .contact-links a {
+        font-size: 18px;
+    }
+
+    .footer-line {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .footer p {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+}
+
+/* SMALL MOBILE STYLES (max-width: 360px) */
+@media (max-width: 360px) {
+    .hero-details h1 {
+        font-size: 30px;
+    }
+
+    .hero-details h2 {
+        font-size: 16px;
+    }
+
+    .hero-details p {
+        font-size: 14px;
+    }
+
+    .viewwork button {
+        height: 40px;
+        width: 140px;
+        font-size: 13px;
+    }
+
+    .divimg img {
+        height: 220px;
+        width: 220px;
+    }
+
+    .aboutText h2 {
+        font-size: 20px;
+    }
+
+    .aboutText p {
+        font-size: 14px;
+    }
+
+    .contact-links {
+        padding: 0 10px;
+    }
+
+    .contact-links span {
+        height: 40px;
+        width: 40px;
+    }
+
+    .contact-links a {
+        font-size: 16px;
+    }
+}
+
+/* Utility classes for better mobile experience */
+@media (max-width: 768px) {
+
+    /* Hide elements that might cause horizontal scroll */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Ensure images don't overflow */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Better touch targets for mobile */
+    button,
+    a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Improve text readability on mobile */
+    p,
+    span {
+        word-wrap: break-word;
+        hyphens: auto;
+    }
 }
