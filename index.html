@@ -18,13 +18,13 @@
 
         <div class="nav">
             <div class="port">
-                <a href="#">Portfolio</a>
+                <a href="#home">Portfolio</a>
             </div>
             <div class="navLinks">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Project</a>
-                <a href="#">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#project">Project</a>
+                <a href="#cont">Contact</a>
 
             </div>
             <div class="toggle" id="menu-toggle">
@@ -51,7 +51,7 @@
 
             </div> -->
 
-            <div class="hero">
+            <div class="hero" id="home">
                 <div class="hero-details">
                     <h1>Raj Aryan</h1>
                     <h2>Web Developer & Designer</h2>
@@ -65,7 +65,7 @@
                 </div>
             </div>
 
-            <div class="about">
+            <div class="about" id="about">
                 <div class="h1text">
                     <h1>About Me </h1>
                     <div class="underline"></div>
@@ -101,7 +101,7 @@
                 </div>
             </div>
 
-            <div class="projects-section">
+            <div class="projects-section" id="project">
                 <div class="proHeading">
                     <span>Featured Work</span>
                     <h1>Projects</h1>
@@ -110,18 +110,23 @@
                 <div class="showProjects">
                     <div class="projects">
                         <span class="first">Full Stack</span>
-                        <h2>E-Commerce Platform</h2>
-                        <p>A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user
-                            authentication, payment integration, and admin dashboard.</p>
+                        <h2>To-Do Desktop App</h2>
+                        <p>A simple yet efficient desktop application built with HTML, CSS, and JavaScript, packaged
+                            using Electron.js for cross-platform desktop compatibility..</p>
+
                         <div class="tech">
-                            <span style="color: rgb(5, 164, 217);">React</span>
-                            <span style="color: green;">Node.js</span>
-                            <span style="color: greenyellow;">MongoDB</span>
-                            <span style="color: lightcoral;">Strip</span>
+                            <span style="color: rgb(5, 164, 217);">HTML5</span>
+                            <span style="color: green;">CSS3</span>
+                            <span style="color: greenyellow;">Javascript</span>
+                            <span style="color: lightcoral;">Electron.js</span>
                         </div>
                         <div class=" btns">
-                            <button class="code"><i class="ri-github-line"></i>Code</button>
-                            <button class="demo"><i class="ri-arrow-right-up-line"></i>Demo</button>
+                            <button class="code"
+                                onclick="window.open('https://github.com/Rajaryan99/TO-DO-Desktop-App', '_blank')"><i
+                                    class="ri-github-line"></i>Code</button>
+                            <button class="demo"
+                                onclick="window.open(' https://rajaryan99.github.io/TO-DO-Desktop-App/', '_blank')"><i
+                                    class="ri-arrow-right-up-line"></i><a href=""></a>Demo</button>
                         </div>
                     </div>
 
@@ -179,7 +184,7 @@
                 </div>
             </div>
 
-            <div class="contack-section">
+            <div class="contack-section" id="cont">
                 <div class="contact_heading">
                     <h1>Get In Touch</h1>
                     <div class="underline"></div>
@@ -192,9 +197,11 @@
 
                 <div class="contact-links">
                     <span> <a href=""><i class="fa-solid fa-at email"></i> </a></span>
-                    <span> <a href=""><i class="fa-brands fa-github github"></i> </a></span>
-                    <span> <a href=""><i class="fa-brands fa-linkedin-in linkedin"></i></a></span>
-                    <span> <a href=""><i class="fa-brands fa-x-twitter X"></i> </a></span>
+                    <span> <a href="https://github.com/Rajaryan99"><i class="fa-brands fa-github github"></i>
+                        </a></span>
+                    <span> <a href="https://www.linkedin.com/in/raj-aryan-singh-897a11321/"><i
+                                class="fa-brands fa-linkedin-in linkedin"></i></a></span>
+                    <span> <a href="https://x.com/Rajarya50547886"><i class="fa-brands fa-x-twitter X"></i> </a></span>
                 </div>
                 <hr class="footer-line">
                 <p><i class="ri-copyright-line"></i> 2025 Raj Aryan. Build with JavaScript, locomotive and Gsap.
