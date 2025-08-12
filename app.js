@@ -114,6 +114,62 @@ tl.from('.aboutText', {
 
 
 
+tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.projects-section .proHeading',
+        scroller: 'body',
+        start: 'top 80%',
+        end: 'top 30%',
+        toggleActions: 'play none none reverse',
+        scrub: 2,
+
+    }
+})
+
+
+tl.from('.projects-section .proHeading span', {
+    opacity: 0,
+    y: -30,
+    duration: 0.5,
+    delay: 0.5
+
+
+})
+
+
+tl.from('.projects-section .proHeading h1', {
+    opacity: 0,
+    y: 30,
+    duration: 0.5,
+
+
+})
+
+tl.from('.projects-section .proHeading p', {
+    opacity: 0,
+    y: 30,
+    duration: 0.5,
+
+
+})
+
+tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.showProjects projects',
+        scroller: 'body',
+        start: 'top 40%',
+        // end: 'top 30%',
+        // toggleActions: 'play none none reverse',
+
+    }
+})
+
+tl.from('.projects1', {
+    opacity: 0,
+    duration: 1,
+    delay: 1
+})
+
 
 
 
