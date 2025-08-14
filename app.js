@@ -193,7 +193,8 @@ tl = gsap.timeline({
 tl.from('.contack-section', {
     opacity: 0,
     y: -100,
-    duration: 0.5,
+    duration: 1,
+    delay: 0.5
 
 
 })
