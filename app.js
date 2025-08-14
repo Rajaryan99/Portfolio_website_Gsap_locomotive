@@ -14,6 +14,11 @@ function mouseFollower() {
 
 mouseFollower();
 
+document.querySelector('.viewbtn').addEventListener('click', () => {
+    document.querySelector('#project').scrollIntoView({
+        behavior: "smooth"
+    })
+});
 let tl = gsap.timeline();
 
 gsap.from('.port', {
@@ -28,7 +33,9 @@ gsap.from('.navLinks a', {
     y: 40,
     duration: 0.5,
     delay: .5,
-    stagger: .3
+    stagger: .3,
+    ease: 'easeInOut'
+
 })
 
 
@@ -153,23 +160,53 @@ tl.from('.projects-section .proHeading p', {
 
 })
 
+// tl = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: '.showProjects projects',
+//         scroller: 'body',
+//         start: 'top 40%',
+//         // end: 'top 30%',
+//         // toggleActions: 'play none none reverse',
+//     }
+// })
+
+
+// tl.form('.showProjects', {
+//     opacity: 0,
+//     y: 80,
+//     duration: 0.5
+// })
+
+
 tl = gsap.timeline({
     scrollTrigger: {
-        trigger: '.showProjects projects',
+        trigger: '.contack-section .contact_heading',
         scroller: 'body',
-        start: 'top 40%',
-        // end: 'top 30%',
-        // toggleActions: 'play none none reverse',
+        start: 'top 80%',
+        end: 'top 30%',
+        toggleActions: 'play none none reverse',
+        scrub: 2,
 
     }
 })
 
-tl.from('.projects1', {
+tl.from('.contack-section', {
     opacity: 0,
-    duration: 1,
-    delay: 1
+    y: -100,
+    duration: 0.5,
+
+
 })
 
 
-
+tl.from('.contact-links', {
+    opacity: 0,
+    y: 100,
+    duration: 0.5,
+    stagger: {
+        each: 0.1,
+        from: "start",
+        grid: "auto"
+    }
+})
 
