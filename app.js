@@ -185,7 +185,7 @@ tl = gsap.timeline({
         start: 'top 80%',
         end: 'top 30%',
         toggleActions: 'play none none reverse',
-        scrub: 2,
+        scrub: 0.5,
 
     }
 })
@@ -194,7 +194,7 @@ tl.from('.contack-section', {
     opacity: 0,
     y: -100,
     duration: 1,
-    delay: 0.5
+    // delay: 0.5
 
 
 })
